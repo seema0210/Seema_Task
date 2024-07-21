@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.boxigo{
+    display: flex;
+    padding: 1rem 2rem;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+.navlink{
+    display: flex;
+    padding: 0.3rem 0;
+}
+ .navlink:active{
+    border-left: 3px solid red;
+}
+
+/* home page css */
+.homepage{
+    padding: 0 5rem;
+}
+.main-home{
+    padding: 1rem 0;
+}
+.arrow{
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px gray;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.3rem;
+    color: red;
+    font-size: 1.3rem;
+    margin-top: 1.8rem;
+}
+.from-to{
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.from-t{
+    padding: 0 1rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+.warn{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    padding: 0.3rem 0.5rem;
+    margin-left: 0.4rem;
+}
+.invent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(230, 226, 226);
+    border-radius: 6px;
+    padding: 0.3rem 0.5rem;
+    margin: 1rem 0;
+}
+.length{
+    color: white;
+    background-color: rgb(224, 46, 46);
+    border-radius: 50%;
+    padding: 0 0.3rem;
+    font-size: 0.8rem;
+}
+.basic-info{
+    display: flex;
+    justify-content: space-between;
+}
