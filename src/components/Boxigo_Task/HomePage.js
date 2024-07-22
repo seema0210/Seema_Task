@@ -19,7 +19,7 @@ const HomePage = () => {
     <div className='homepage'>
         <h1 className='font-bold text-xl'>My Moves</h1>
         {
-            data && data.map((item) => (
+            data && data?.map((item) => (
                 <div key={item.estimate_id}>
                     <MovieList movies = { item } />
                 </div>

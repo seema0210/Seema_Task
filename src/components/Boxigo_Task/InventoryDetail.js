@@ -1,7 +1,6 @@
 import React from 'react'
 
 const InventoryDetail = ({ movies, currentCategory }) => {
-    console.log('rrr', movies);
 
     return (
         <div>

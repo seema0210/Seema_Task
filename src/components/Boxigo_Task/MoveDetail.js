@@ -4,14 +4,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import InventoryDetail from './InventoryDetail';
 const MoveDetail = ({movies}) => {
     const [open, setOpen] = useState({})
-    const [currentCategory, setCurrentCategory] = useState([]);
+    // const [currentCategory, setCurrentCategory] = useState([]);
 
     const toggleOpen = (id, category) => {
         setOpen(prevState => ({
             ...prevState,
             [id]: !prevState[id]
         }));
-        setCurrentCategory(category);
+        // setCurrentCategory(category);
     };
 
     return (
@@ -22,7 +22,7 @@ const MoveDetail = ({movies}) => {
                     <button type='button' className='btn'>Edit Inventory</button>
                 </div>
                 {
-                    movies.items.inventory && movies.items.inventory.map((invent) => (
+                    movies?.items?.inventory && movies?.items?.inventory?.map((invent) => (
                         <div key={invent.id} onClick={() => toggleOpen(invent.id)}>
                             <div className='invent'>
                             <h2 className='text-red-500'>{invent.displayName} <span className='length'>{invent.category.length}</span></h2>
