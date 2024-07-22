@@ -1,16 +1,19 @@
 import React, { useState } from 'react'
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
+import InventoryDetail from './InventoryDetail';
 const MoveDetail = ({movies}) => {
-    console.log('hii', movies);
     const [open, setOpen] = useState({})
+    const [currentCategory, setCurrentCategory] = useState([]);
 
-    const toggleOpen = (id) => {
+    const toggleOpen = (id, category) => {
         setOpen(prevState => ({
             ...prevState,
             [id]: !prevState[id]
         }));
+        setCurrentCategory(category);
     };
+
     return (
         <div>
             <div>
@@ -26,7 +29,7 @@ const MoveDetail = ({movies}) => {
                             <p>{ open[invent.id] ? <IoIosArrowDown/> : <IoIosArrowUp/>}</p>
                             </div>
                             {
-                                open[invent.id] && 'open code'
+                                open[invent.id] && <InventoryDetail movies={movies.items.inventory} currentCategory={invent.name}/>
                             }
                         </div>
                     ))
@@ -39,7 +42,7 @@ const MoveDetail = ({movies}) => {
                 </div>
                 <div>
                     <div className='py-3'>
-                        <h1 className='font-bold text-red-500'>Existing House Details</h1>
+                        <h1 className='font-bold text-red-500 py-1'>Existing House Details</h1>
                         <div className='basic-info'>
                             <div>
                                 <h2 className='font-bold'>Location</h2>
@@ -58,13 +61,13 @@ const MoveDetail = ({movies}) => {
                                 <p>{movies.from_address.pincode}</p>
                             </div>
                         </div>
-                        <h2 className='font-bold pt-2'>Additional Information</h2>
+                        <h2 className='font-bold pt-1'>Additional Information</h2>
                         <p>No additional info</p>
                     </div>
                     <hr/>
                     <div>
                     <div className='py-3'>
-                        <h1 className='font-bold text-red-500'>New House Details</h1>
+                        <h1 className='font-bold text-red-500 py-1'>New House Details</h1>
                         <div className='basic-info'>
                             <div>
                                 <h2 className='font-bold'>Location</h2>

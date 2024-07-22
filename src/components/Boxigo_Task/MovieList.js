@@ -54,7 +54,7 @@ const MovieList = ({ movies }) => {
             {
                 dataVisible && <MoveDetail movies = {movies}/>
             }
-            <hr />
+            <hr className='py-1'/>
         </>
     )
 }

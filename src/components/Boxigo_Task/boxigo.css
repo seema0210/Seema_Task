@@ -38,7 +38,7 @@
     margin-top: 1.8rem;
 }
 .from-to{
-    padding: 0.5rem 0;
+    padding: 0.7rem 0;
     display: flex;
     justify-content: space-around;
 }
@@ -49,6 +49,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 0;
 }
 .icon{
     display: flex;
@@ -86,4 +87,17 @@
 .basic-info{
     display: flex;
     justify-content: space-between;
+    padding: 0.3rem 0;
+}
+.category {
+    display: flex;
+    flex-direction: row; 
+    font-weight: bold;
+    flex-wrap: wrap; 
+}
+.category div {
+    margin-right: 1.5rem; 
+}
+.feature{
+    font-weight: normal;
 }

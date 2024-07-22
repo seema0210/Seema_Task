@@ -7,7 +7,7 @@ const HomePage = () => {
     const [data, setData] = useState([])
 
     const getMovie = async () => {
-        const response = await axios(`http://test.api.boxigo.in/sample-data/`);
+        const response = await axios(`http://test.api.boxigo.in/sample-data/`)
         const res = response.data.Customer_Estimate_Flow;
         return res;
     }
