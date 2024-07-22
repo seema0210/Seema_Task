@@ -44,7 +44,7 @@ const MovieList = ({ movies }) => {
                     <div>
                         <button className='text-red-500 border border-red-500 p-1 rounded mr-2'
                         onClick={() => setDataVisible(true)}>
-                            View more details</button>
+                            View move details</button>
                         <button className='text-white bg-red-500 p-1 rounded'>
                             Quotes Awaiting</button>
                     </div>
